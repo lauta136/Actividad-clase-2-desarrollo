@@ -1,0 +1,129 @@
+/* ===== HEADER ===== */
+.header {
+    background: var(--color-header-bg);
+    color: var(--color-white);
+    padding: 12px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.header-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-ui);
+    font-size: 11px;
+    opacity: 0.7;
+}
+
+.logo {
+    font-family: var(--font-heading);
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--color-white);
+    line-height: 1;
+    margin: 4px 0;
+}
+
+.logo span {
+    color: var(--color-accent-light);
+}
+
+.header-tagline {
+    font-family: var(--font-ui);
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.6;
+    text-align: center;
+}
+
+/* HAMBURGUESA */
+.hamburger {
+    background: none;
+    border: none;
+    color: var(--color-white);
+    font-size: 24px;
+    cursor: pointer;
+    padding: 4px 8px;
+    display: block; /* visible en mobile */
+}
+
+/* BARRA NAV: oculta en mobile, visible en desktop */
+.nav-bar {
+    display: none;
+    background: var(--color-nav-bg);
+    width: 100%;
+}
+
+.nav-bar a {
+    display: block;
+    padding: 10px 16px;
+    font-family: var(--font-ui);
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--color-white);
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+    transition: background 0.2s;
+}
+
+.nav-bar a:hover {
+    background: rgba(255,255,255,0.1);
+    color: var(--color-white);
+}
+
+/* ===== TABLET (>= 600px) ===== */
+@media (min-width: 600px) {
+    .logo {
+        font-size: 42px;
+    }
+}
+
+/* ===== DESKTOP (>= 900px) ===== */
+@media (min-width: 900px) {
+    .header {
+        padding: 16px 32px;
+    }
+
+    .logo {
+        font-size: 52px;
+    }
+
+    /* En desktop el hamburger desaparece */
+    .hamburger {
+        display: none;
+    }
+
+    /* En desktop la nav es barra horizontal */
+    .nav-bar {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: center;
+        background: var(--color-nav-bg);
+        width: 100%;
+    }
+
+    .nav-bar a {
+        display: inline-block;
+        border-bottom: none;
+        border-right: 1px solid rgba(255,255,255,0.2);
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+
+    .nav-bar a:last-child {
+        border-right: none;
+    }
+
+    .nav-bar a:hover {
+        background: rgba(0,0,0,0.2);
+    }
+}

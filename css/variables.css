@@ -1,0 +1,45 @@
+/* ===== VARIABLES GLOBALES ===== */
+:root {
+    --color-primary: #1a1a2e;
+    --color-accent: #c0392b;
+    --color-accent-light: #e74c3c;
+    --color-bg: #f4f1ec;
+    --color-white: #ffffff;
+    --color-text: #1a1a1a;
+    --color-text-light: #555555;
+    --color-border: #d9d3c7;
+    --color-header-bg: #1a1a2e;
+    --color-nav-bg: #c0392b;
+
+    --font-heading: 'Georgia', 'Times New Roman', serif;
+    --font-body: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    --font-ui: 'Trebuchet MS', Tahoma, Geneva, sans-serif;
+
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.12);
+    --shadow-md: 0 2px 8px rgba(0,0,0,0.15);
+
+    --radius: 4px;
+    --gap: 16px;
+}
+
+/* ===== BASE ===== */
+body {
+    font-family: var(--font-body);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-size: 1rem;
+}
+
+a {
+    color: var(--color-text);
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: var(--color-accent);
+}
+
+img {
+    height: auto;
+    object-fit: cover;
+}
