@@ -568,6 +568,8 @@ dialog {
     width: 90%;
     box-shadow: var(--shadow-md);
     font-family: var(--font-ui);
+
+
 }
 
 dialog h4 {
